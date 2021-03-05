@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F3E2"
+    tools:context=".fragments.CompararClimaFragment">
+
+
+    <TextView
+        android:id="@+id/textViewMinTemperatureCompare2"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewMinTemperatureCompare1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaxTemperatureCompare2" />
+
+    <TextView
+        android:id="@+id/textViewMaxTemperatureCompare2"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewMaxTemperatureCompare1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumidityCompare2" />
+
+    <TextView
+        android:id="@+id/textViewMinTemperatureCompare1"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMaxTemperatureCompare1" />
+
+    <TextView
+        android:id="@+id/textViewMaxTemperatureCompare1"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHumidityCompare1" />
+
+    <TextView
+        android:id="@+id/textViewHumidityCompare2"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewHumidityCompare1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPressureCompare2" />
+
+    <TextView
+        android:id="@+id/textViewPressureCompare2"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureValueCompare2" />
+
+    <TextView
+        android:id="@+id/textViewHumidityCompare1"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPressureCompare1" />
+
+    <TextView
+        android:id="@+id/textViewPressureCompare1"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureValueCompare1" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureValueCompare2"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureCompare" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureValueCompare1"
+        android:layout_width="160dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTemperatureCompare" />
+
+    <ImageView
+        android:id="@+id/imageViewWeatherCompare1"
+        android:layout_width="108dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionCompare1"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewWeatherCompare2"
+        android:layout_width="108dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescriptionCompare2"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewDescriptionCompare2"
+        android:layout_width="140dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainStatusCompare2" />
+
+    <TextView
+        android:id="@+id/textViewDescriptionCompare1"
+        android:layout_width="140dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMainStatusCompare1" />
+
+    <TextView
+        android:id="@+id/textViewMainStatusCompare1"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherCompare" />
+
+    <TextView
+        android:id="@+id/textViewMainStatusCompare2"
+        android:layout_width="140dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWeatherCompare" />
+
+    <TextView
+        android:id="@+id/textViewTemperatureCompare"
+        android:layout_width="138dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewWeatherCompare1" />
+
+    <TextView
+        android:id="@+id/textViewCompare"
+        android:layout_width="318dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWeatherCompare"
+        android:layout_width="88dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="36dp"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerClima2" />
+
+    <Spinner
+        android:id="@+id/spinnerClima1"
+        android:layout_width="157dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCompare" />
+
+    <Spinner
+        android:id="@+id/spinnerClima2"
+        android:layout_width="175dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCompare" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

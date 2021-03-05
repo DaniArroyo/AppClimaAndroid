@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AppClimaDaniArroyo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="clima_ciudad">Clima en %1$s</string>
+    <string name="temperatura_ciudad">Temperature: %1$s °C</string>
+    <string name="pressure_ciudad">Pressure: %1$s Pa</string>
+    <string name="humidity_ciudad">Humidity: %1$s %%</string>
+    <string name="max_temp_ciudad">Max Temp:  %1$s °C</string>
+    <string name="min_temp_ciudad">Min Temp:  %1$s °C</string>
+    <string name="weather">Weather</string>
+    <string name="temperature">Temperature</string>
+    <string name="weather_icon">http://openweathermap.org/img/wn/%1$s@4x.png</string>
+    <string name="welcome_user">WELCOME  %1$s</string>
+    <string name="comparar_climas">Comparar Climas</string>
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F3E2"
+    tools:context=".fragments.CiudadesMenuFragment">
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="158dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="336dp"
+        android:layout_weight="1"
+        android:text="Cerrar Sesion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnComparar"
+        android:layout_width="158dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="1"
+        android:text="Comparar"
+        app:layout_constraintBottom_toTopOf="@+id/editTextCiudad"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewUser"
+        android:layout_width="177dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerViewCiudades"
+        app:layout_constraintEnd_toStartOf="@+id/btnLogout"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCiudades"
+        android:layout_width="414dp"
+        android:layout_height="208dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnComparar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <EditText
+        android:id="@+id/editTextCiudad"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Ciudad"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregar"
+        app:layout_constraintStart_toEndOf="@+id/recyclerViewCiudades" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="117dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="92dp"
+        android:layout_weight="1"
+        android:text="Agregar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
